@@ -1,0 +1,4 @@
+[workspace]
+members = [
+    "src/ICPFullOnChainHackathon2023_backend",
+]

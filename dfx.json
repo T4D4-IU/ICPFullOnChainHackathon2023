@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "ICPFullOnChainHackathon2023_backend": {
+      "candid": "src/ICPFullOnChainHackathon2023_backend/ICPFullOnChainHackathon2023_backend.did",
+      "package": "ICPFullOnChainHackathon2023_backend",
+      "type": "rust"
+    },
+    "ICPFullOnChainHackathon2023_frontend": {
+      "dependencies": [
+        "ICPFullOnChainHackathon2023_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/ICPFullOnChainHackathon2023_frontend/src/index.html"
+      },
+      "source": [
+        "src/ICPFullOnChainHackathon2023_frontend/assets",
+        "dist/ICPFullOnChainHackathon2023_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
